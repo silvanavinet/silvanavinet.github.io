@@ -1,4 +1,4 @@
-    * {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -100,13 +100,9 @@ p {
     display: block;
 } */
 
-/* SECCIONES */
-
 article {
     margin: 0px 16px;
 }
-
-
 .section1 {
     margin-bottom: 37px;
 }
@@ -166,6 +162,13 @@ color: white;
     margin-bottom: 10px;
     margin-right: 11px;
     margin-left: 11px;
+}
+
+.spotify-iframe {
+    width: 100%;
+    /* height: 232 ; */
+    border:0;
+    background-color: transparent 
 }
 
 .section3 {
@@ -268,7 +271,7 @@ color: white;
 
 .section8 {
     position: relative;
-    z-index: 5px;
+    /* z-index: 5px; */
     background-color: white;
 }
 
