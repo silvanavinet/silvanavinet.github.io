@@ -1,0 +1,112 @@
+body.dark {
+  background-color: #37383C;
+  }
+
+  body.dark .nav-bar {
+    border-top:  5px solid black;
+
+}
+
+body.dark .nav-bar-logo {
+  display: none;
+}
+
+body.dark .nav-bar-logo-nocturno {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-top: 34px;
+  margin-left: 22px;
+
+}
+
+body.dark #burger-open {
+  color: white;
+}
+
+body.dark .burger-close {
+  color: white;
+}
+
+body.dark .menu-options {
+  background-color: #37383C;
+  opacity: 100%;
+}
+
+body.dark .menu-options li  .modonocturno {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;    
+  font-size: 15px;
+}
+
+body.dark .section1 h1 {
+  color:white;
+}
+
+body.dark .main-search {
+  background: #37383C ;
+  border: 1px solid white;
+  border-radius: 27px;
+
+}
+
+body.dark .main-search-input input {
+  background-color: #37383C;
+}
+
+body.dark #suggestion-list {
+  background: #37383C ;
+  color: #9CAFC3;
+}
+
+body.dark #searchBar {
+  color: white;
+}
+
+body.dark .section2 h3 {
+  color: white;
+
+}
+
+body.dark .section2 .main-description {
+  color: white;
+
+}
+
+body.dark .section3-results .linea {
+  display: none;
+}
+
+body.dark .section3-results {
+  color: white;
+}
+
+body.dark .section3-results .button {
+  background: #572ee5;
+  border: 1px solid white;
+  color: white;
+}
+
+body.dark .section6 {
+  background-color: #222326;
+  color: white;
+}
+
+body.dark .section6 h2 {
+  color: white;
+}
+
+body.dark .section7 {
+  border-bottom:  5px solid rgb(0, 0, 0);
+
+}
+
+body.dark .section7 h2 {
+  color: white;
+  font-size: 13px;
+}
+
+body.dark .section7 p {
+  color: white;
+}

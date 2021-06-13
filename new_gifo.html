@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.scss">
+  <link rel="stylesheet" type="text/css" href="./css/web.css">
+  <link rel="stylesheet" type="text/css" href="./css/baseline.css">
+  <link rel="stylesheet" type="text/css" href="./css/newgifo.css">
+  <link rel="stylesheet" type="text/css" href="./css/dark_new_gifo.css">
+  <script src="https://kit.fontawesome.com/b6e9edea8f.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+  <title>Gifos: Crear</title>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="nav-bar">
+      <a href="index.html">
+        <img class="nav-bar-logo" src="./svg/logo-mobile.svg" alt="logo-mobile">
+        <img class="nav-bar-logo-nocturno" src="./svg/logo-mobile-modo-noct.svg" alt="logo-mobile-nocturno">
+      </a>
+
+      <input type="checkbox" id="chk-nav-bar">
+
+      <!-- MENU -->
+      <ul class="menu-options">
+          <li>
+              <!-- <button class="modonocturno menu-link" id="modoNocturno">MODO NOCTURNO</button> -->
+              <a class="modonocturno menu-link" id="modoNocturno" href="#">MODO NOCTURNO</a>
+          </li>
+          <hr class="menu-border">
+          <li>
+              <a id="btn-favoritos" class="menu-options-links menu-link" href="#favoritos">FAVORITOS</a>
+          </li>
+          <hr class="menu-border">
+          <li>
+              <a id="btn-misgifos" class="menu-options-links menu-link" href="#misgifos" >MIS GIFOS</a>
+              <hr class="menu-border">
+          </li>
+          <!-- <img id="button-nuevo-gifo" class="buttonCrearGifos" src="./svg/button-crear-gifo.svg" alt=""> -->
+          <div id="button-nuevo-gifo" class="buttonCrearGifos" src="./svg/button-crear-gifo.svg" alt=""></div>
+      </ul>
+
+      <label for="chk-nav-bar" id="burger-close" class="burger-close"> <i class="fa fa-times"
+              aria-hidden="true"></i></label>
+      <label for="chk-nav-bar" id="burger-open"><span class="hamburger"><i class="fa fa-bars"
+                  aria-hidden="true"></i></span></label>
+    </nav>
+
+    <section>
+      <div id="container-new-gifo">
+        
+        <div class="container-ng-div">
+          <div id="viewport" class="in-border">
+            <p class="content-header">
+            Aquí podrás <br> crear tus propios <span> GIFOS  </span>
+            </p>
+            <p class="content-subheader">
+              ¡Crea tu GIFO en sólo 3 pasos! <br> (sólo necesitas una cámara para grabar un video)
+            </p>
+            <div>
+            
+              <video id="video"></video>
+              <img id="gifo-result" src="" alt="">
+              <div id="gifo-upload" >
+              </div> 
+              <div id="gifo-upload-panel"
+                >
+                <div id ="gifo-upload-panel-1" >
+                  <div id="button-download-ngifo" class="icon-content icon-content-download" ></div>
+                  <div id="button-share-ngifo" class="icon-content icon-content-share" ></div>
+                  <input id="clipboard" ></input>
+                </div>
+                <img id="gifo-upload-icon"
+                src="./svg/loader.svg" >
+                <p id="gifo-upload-result" 
+                >Estamos subiendo tu GIFO</p>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+        
+        <div class="state-panel container-ng-div">
+          <div id="state-panel-1">
+
+          </div>
+          <div class="number-container">
+            <div class="number"> <p>1</p> </div>
+            <div class="number"> <p>2</p> </div>
+            <div class="number"> <p>3</p> </div>
+          </div>
+          <p id="record-timer">00:00:00</p>
+        </div>
+        
+
+        <div class="container-ng-div">
+
+        </div>
+        
+        <div class="container-ng-div">
+          <div id="content-create" class="button">
+            <p>COMENZAR</p> 
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <section class="section7">
+          <div id="share">
+              <h2>Compartir en: </h2>
+              <div class="iconos">
+                  <a class="social-media" href="https://www.facebook.com/Acamica.org"> <i class="fab fa-facebook-f"></i></a>
+                  <a class="social-media" href="https://twitter.com/Acamica_com"> <i class="fab fa-twitter"></i></a>
+                  <a class="social-media" href="https://www.instagram.com/acamica/"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <p id="trademark">© GIFOS 2020 All Rights Reserved.</p>
+      </section>
+  </footer>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" ></script> -->
+  <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+  <script src="./js/migifos.js"></script>
+  <script src="./js/service.js"></script>
+  <script src="./js/content.js"></script>
+
+  <script>
+    const modoNocturno = document.getElementById("modoNocturno");
+
+    modoNocturno.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        btnModoNocturno.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

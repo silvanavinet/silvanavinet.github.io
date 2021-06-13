@@ -4,159 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b6e9edea8f.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>Spec EXPORT</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.scss">
+    <link rel="stylesheet" type="text/css" href="./css/web.css">
+    <link rel="stylesheet" type="text/css" href="./css/dark_theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
-
 <body>
-    <header>
-        <nav class="nav-bar">
-            <img src="assets/logo.svg" class="logo-container" alt="Podcasts">
-            <input type="checkbox" id="chk-nav-bar">
-            <ul class="menu-options">
-                <li><a class="menu-options-links" href="#episodios">EPISODIOS</a></li>
-                <li><a class="menu-options-links" href="#nosotros">NOSOTROS</a></li>
-                <li><a class="menu-options-links" href="#entrevistas">ENTREVISTAS</a></li>
-                <li><a class="menu-options-links" href="#topicos">TÓPICOS</a></li>  
-            </ul>
-            <label for="chk-nav-bar" id="burger-close" class="burger-close"> <i class="fa fa-times" aria-hidden="true"></i></label>
-            <label for="chk-nav-bar" id="burger-open"><span class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></span></label>
-        </nav>
-    </header>
-    <main class="">
 
+    <!-- Navbar -->
+    <nav class="nav-bar">
+        <img class="nav-bar-logo" src="./svg/logo-mobile.svg" alt="logo-mobile">
+        <img class="nav-bar-logo-nocturno" src="./svg/logo-mobile-modo-noct.svg" alt="logo-mobile-nocturno">
+
+        <input type="checkbox" id="chk-nav-bar">
+
+        <!-- MENU -->
+        <ul class="menu-options">
+            <li>
+                <!-- <button class="modonocturno menu-link" id="modoNocturno">MODO NOCTURNO</button> -->
+                <a class="modonocturno menu-link" id="modoNocturno" href="#">MODO NOCTURNO</a>
+            </li>
+            <hr class="menu-border">
+            <li>
+                <a id="btn-favoritos" class="menu-options-links menu-link" href="#favoritos">FAVORITOS</a>
+            </li>
+            <hr class="menu-border">
+            <li>
+                <a id="btn-misgifos" class="menu-options-links menu-link" href="#misgifos" >MIS GIFOS</a>
+                <hr class="menu-border">
+            </li>
+            <!-- <img id="button-nuevo-gifo" class="buttonCrearGifos" src="./svg/button-crear-gifo.svg" alt=""> -->
+            <div id="button-nuevo-gifo" class="buttonCrearGifos" src="./svg/button-crear-gifo.svg" alt=""></div>
+        </ul>
+
+        <label for="chk-nav-bar" id="burger-close" class="burger-close"> <i class="fa fa-times"
+                aria-hidden="true"></i></label>
+        <label for="chk-nav-bar" id="burger-open"><span class="hamburger"><i class="fa fa-bars"
+                    aria-hidden="true"></i></span></label>
+    </nav>
+    
+    <!-- Search Bar -->
+    <main>
         <section class="section1">
-            <article>
-                <h4>Hello <del>world</del> pale blue dot.</h4>
-            </article>
-            <article>
-                <h2 class="wide-screen">Hello <del>world</del> pale blue dot<span style="color:blue" >.</span></h2>
-            </article>
-
-            <article>
-                <p class="section-element">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-                <p class="wide-screen">El portal de podcasts que explora el mundo de la programación y <br> la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-            </article>
-
-
-            <article>
-               <div class="button-primary">CONOCE MÁS</div>
-            </article>
-
-        </section>
-
-        <section class="section2" id="episodios">
-
-            <article>
-                <h2>Episodios</h2>
-            </article>
-
-            <article>
-                <div class="spotify-container1">
-                    <div class="spotify-row">
-                        <div class="spotify">
-                            <iframe class="spotify-iframe" 
-                                src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu" 
-                                height="232" 
-                                allow="encrypted-media">
-                            </iframe>                        
-                        </div>
-                        <div class="spotify">
-                            <iframe class="spotify-iframe" 
-                                src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" 
-                                height="232" 
-                                allow="encrypted-media">
-                            </iframe> 
-                        </div>
+            <div id="section1focusoff" >
+                <h1>Inspírate, busca, <br> guarda, y crea <br class="grande"> los <br> mejores <span style="color: #50E3C2 ">GIFOS</span></h1>
+                <img src="./svg/ilustra_header.svg" class="main-ilustra" alt="ilustra_header">
+            </div>
+            <div class="main-search">
+                    <div  id="main-search-input" class="main-search-input">
+                        
+                        <img
+                        id="lupita" 
+                        src="./svg/icon-search-modo-noct.svg" alt="search icon">
+                        <input id="searchBar" type="text" placeholder="Busca GIFOS y más">
+                        <img id="searchButton" src="./svg/icon-search.svg" alt="search icon">
                     </div>
-                    <div class="spotify-row">
-                        <div class="spotify">
-                            <iframe class="spotify-iframe" 
-                                src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" 
-                                height="232" 
-                                allow="encrypted-media">
-                            </iframe> 
-                        </div>
-                        <div class="spotify">
-                            <iframe class="spotify-iframe" 
-                                src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" 
-                                height="232" 
-                                allow="encrypted-media">
-                            </iframe> 
-                        </div>
+                    <hr>
+                    <div id="suggestion">
+                        <ul id="suggestion-list">
+                            <li class="sugerencia-item"></li>
+                            <li class="sugerencia-item"></li>
+                            <li class="sugerencia-item"></li>
+                            <li class="sugerencia-item"></li>
+                        </ul>
                     </div>
-                </div>
-            </article>
+            </div>
         </section>
-        <section class="section3-4">
-        <section class="section3" id="nosotros">
-            <img src="assets/phone.png" alt="">
-        </section>
-        <section class="section4">
-            <article>
-                <h2>De dónde venimos </h2>
-                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. </p>
-                <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-            </article>
-        </section>
-    </section>
-        <section class="section5" id="entrevistas">
-            <article>
-                <h2>Invitadas/os estelares </h2>
-            </article>
-            <section class="img">
-            <img src="assets/grace-hopper.png" alt="grace-hopper">
-            <img src="assets/Katie-Bouman.png" alt="Katie-Bouman">
-            <img src="assets/Margaret_Hamilton.png" alt="Margaret_Hamilton">
-            <img src="assets/An-ERAUnivac-1103-computer-in-the-1950s.png" alt="computer">
-            <img src="assets/Computer-operators-with-an-Eniac—the-worlds-first-programmable-general-purpose-computer.png" alt="purpose-computer">
-            <img src="assets/susan-kare.png" alt="">
-        </section>
-        </section>
-        <section class="section6" id="topicos">
-            <article><h2>Algunos de nuestros temas</h2></article>
-<div class="themes-container">
-            <article class="theme">
-                <img class="imagen1" src="assets/icon1.svg" alt="">
-                <h3>Trabajo remoto</h3>
-            </article>
-            <article class="theme">
-                <img src="assets/icon2.svg" alt="">
-                <h3>Repensando la <br> programación</h3>
-            </article>
-            <article class="theme">
-                <img src="assets/icon3.svg" alt="">
-                <h3>Bases del código</h3>
-            </article>
-            <article class="theme">
-                <img src="assets/icon4.svg" alt="">
-                <h3>Seguridad informática</h3>
-            </article>
-        </div>
-        </section>
-        <section class="section7">
-            <article>
-                <h2>¿Quieres las últimas novedades?</h2>
-            </article>
-            <article>
-                <div class="button-primary">ESCUCHA LOS EPISODIOS</div>
-            </article>
+        <section class="section2">  
+            <h3>Trending:</h3>
+            <p class="main-description">Reactions, Entertainment, <br> Sports, Stickers, Artists</p>
         </section>
     </main>
-    <footer class="section8"> 
-        <h3 class="">© 2019— Hello blue pale dot</h3>
-        <article class="icons wide-screen">
-            <a href="https://open.spotify.com/show/2Iibd5A6R7mxkCm4NwNmUn?si=Cp8CoxeuQLymtDLFg4B5kA"><i class="fab fa-spotify"></i></a>
-            <a href="https://www.instagram.com/acamica/"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/Acamica_com"> <i class="fab fa-twitter"></i></a>
-            <a href="https://www.facebook.com/Acamica.org"> <i class="fab fa-facebook"></i></a>
-            <a href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a>
-        </article>
+
+    <!-- Results -->
+    <section class="section3-results" id="resultsPanel">
+        <hr class="linea">
+        <img id="section-icon" class="image-center" src="./svg/icon-favoritos.svg" >
+        <h2 id="tituloSeccion">busqueda</h2>
+        <div id="listaGifs" class="grid-container" >
+        </div>
+        <div id="no-results">
+            <img class="image-center" src="./svg/icon-fav-sin-contenido.svg">
+            <h3 id="no-results-text"></h3>
+        </div>
+        <div class="viewmore">
+            <input class="button" id="viewmore" type="button" value="VER MÁS">
+        </div>
+        
+    </section>
+    
+    <!-- Trending -->
+    <section class="section6">
+        <h2>Trending GIFOS</h2>
+        <p>Mira los últimos <br> GIFOS de nuestra comunidad.</p>
+        <div class="trending-carrusel">
+            <img  id= "button-left" class= "button-left" src="./svg/button-slider-left.svg" alt="">
+            <div  id="trendingcarrusel" class="carrusel" > </div>
+            <img  id= "button-right" class= "button-right" src="./svg/button-Slider-right.svg" alt="">
+        </div>
+    </section>
+
+    <!-- Gifo Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <img  id= "modal-button-left" class= "button-left" src="./svg/button-slider-left.svg" alt="">
+            <div>
+                <img  id="modal-close" class='modal-close' src="./svg/close.svg" alt="">
+                <img id="modal-img" class="modal-gifos" src="./Captura de Pantalla 2020-10-08 a la(s) 19.25.50.png" alt="">
+                <div class="modal-flex">
+                    <div class="modal-flex-p">
+                        <p id="modal-user" class="texto2">User</p>
+                        <p id="modal-titulo" class="texto1">Título GIFO</p>
+                        </div>    
+                    <div class="modal-flex-img">
+                        <img id="modal-favoritos" src="./svg/icon-fav-active.svg" alt="">
+                        <img id="modal-descargar" src="./svg/icon-download-hover.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <img  id= "modal-button-right" class= "button-right" src="./svg/button-Slider-right.svg" alt="">
+        </div>
+  
+    </div>
+
+    <!-- Nuevo Gifo Modal -->
+    <div id="modal-ngifo" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <img  
+                id="modal-close-ngifo" 
+                class='modal-close' 
+                src="./svg/close.svg" 
+                alt="">
+            <!-- <img id="modal-img" class="modal-gifos" src="./Captura de Pantalla 2020-10-08 a la(s) 19.25.50.png" alt="">
+            <div class="modal-flex">
+                <div class="modal-flex-p">
+                    <p id="modal-user" class="texto2">User</p>
+                    <p id="modal-titulo" class="texto1">Título GIFO</p>
+                    </div>    
+                <div class="modal-flex-img">
+                    <img id="modal-favoritos" src="./svg/icon-fav-active.svg" alt="">
+                    <img id="modal-descargar" src="./svg/icon-download-hover.svg" alt="">
+                </div>
+            </div> -->
+            <!-- <button id="empezar"> empezar</button>
+            <button id="terminar"> terminar</button>
+            <img id="mostrarGif" src="" alt="">
+            <video id="video"></video>  -->
+        </div>
+    </div>
+    
+    <footer>
+        <section class="section7">
+            <div id="share">
+                <h2>Compartir en: </h2>
+                <div class="iconos">
+                    <a class="social-media" href="https://www.facebook.com/Acamica.org"> <i class="fab fa-facebook-f"></i></a>
+                    <a class="social-media" href="https://twitter.com/Acamica_com"> <i class="fab fa-twitter"></i></a>
+                    <a class="social-media" href="https://www.instagram.com/acamica/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <p id="trademark">© GIFOS 2020 All Rights Reserved.</p>
+        </section>
     </footer>
+
+    <!-- <div id ='modal' class="modal">
+        <img class="modal-close" src="./close.svg" alt="close">
+        <img id="selectedGif" class="modal-gif" src="https://media.giphy.com/media/y1ZBc" alt="selected gif">
+        <div class="modal-details">
+         <div>
+             <h4>usuario</h4>
+             <h3>titulo gif</h3>
+        </div>
+        <div>
+                <img src="././svg/icon-fav-active.svg" alt="icono favorito">
+                <a id="downloadGif" href="" target="_blank" download="" >
+                    <img src="./svg/button-/icon-download-hover.svg" alt="descargar gif">
+                </a>
+            </div>       
+        </div>
+    </div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" ></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="./js/detectMobile.js"></script>
+    <script src="./js/service.js"></script>
+    <script src="./js/migifos.js"></script>
+    <script src="./js/index.js"></script>
+
 </body>
 
 </html>

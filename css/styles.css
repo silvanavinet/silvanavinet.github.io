@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+.nav-bar {
+    display:flex;
+    justify-content: space-between;
+    border-top: 5px solid #572ee5;
+    height: 95px;
+} 
+
+.nav-bar-logo{
+    width: 48px;
+    height: 48px;
+    margin-top: 34px;
+    margin-left: 22px;
+}
+
+.nav-bar-logo-nocturno {
+display: none;
+}
+
+#burger-open {
+    color: blueviolet;
+    margin-right: 26px;
+    margin-top: 52px;
+}
+
+.burger-close {
+    display: none;
+    margin-right: 27px;
+    color: blueviolet;
+}
+
+.menu-options {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 100px;
+    background-color: #572EE5;
+    opacity: 90%;
+    font-family: 'Roboto', sans-serif;    
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    height: 484px;
+}
+
+
+.menu-border {
+    margin: auto;
+    width: 10%;
+    opacity: 50%;
+}
+
+.menu-options p {
+    height: 0.1px;
+    width: 41px;
+}
+
+#chk-nav-bar {
+    display: none;
+}
+
+#chk-nav-bar:checked ~ #burger-open {
+    display: none;
+}
+
+#chk-nav-bar:checked ~ .menu-options,
+#chk-nav-bar:checked ~ .burger-close {
+    display: block;
+}
+
+.menu-options li {
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.menu-options li:last-child {
+    margin-bottom: 24px;
+}
+
+.menu-options li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-options li  .modonocturno {
+    /* text-decoration: none; */
+    background-color: #572EE5;
+    color: white;
+    /* border: 0px solid #572ee5; */
+    font-family: 'Roboto', sans-serif;    
+    font-size: 15px;
+}
+
+#hamb,
+#burger-close {
+    display: none;
+}
+
+#hamb:checked~#burger-open {
+    display: none;
+}
+
+
+#hamb:checked~.menu-options,
+#hamb:checked~#burger-close,
+#hamb:checked~.item {
+    display: block;
+}
+
+.buttonCrearGifos {
+    display: none;
+}
+
+/* SECTION 1 */
+
+.section1 {
+    margin-top: 7px;
+    text-align: center;
+}
+
+.section1 h1 br.grande{
+    display: none; 
+}
+
+.section1 h1{
+    color: #572EE5;
+    font-size: 25px;
+    border-left: 45px;
+    border-right: 44px;
+    border-top: 7px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section1 .main-ilustra{
+    height:130px ;
+    width: 273px;
+    margin-top: 31px;
+}
+
+.main-search {
+    background: #ffffff;
+    border: 1px solid #572ee5;
+    border-radius: 27px;
+    margin: 0px 10px 0px 10px;
+    padding: 5px;
+}
+
+.main-search-open {
+    height: 200px;
+}
+
+.main-search hr {
+    display: none;
+}
+
+.main-search-open hr {
+    display: block;
+    margin: 0px 10px;
+    opacity: 0.5;
+    border: 1px solid #9CAFC3;
+    margin-bottom: 10px;
+
+}
+
+/* cuando se abre */
+.main-search-input {
+    display: flex;
+    margin: 0 auto;
+    height: 50px;
+    width: 334px;
+}
+
+.main-search-input-open {
+    display: flex;
+    margin: 0 auto;
+    height: 50px;
+    width: 334px;
+}
+
+.main-search-input input {
+    padding-left: 15px;
+    border: 0px none white;
+    margin: 15px auto;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size:16px;
+    color: black;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#suggestion {
+    display: none;
+}
+
+#suggestion-list {
+        background: #ffffff;
+        border-radius: 27px;
+        height: 100px;
+        list-style-type: none ;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 10px;
+        color: #9CAFC3;
+        font-size: 16px;
+}
+
+.suggestion-element {
+    margin: 5px 0px;
+}
+
+.suggestion-element img {
+    width: 18px;
+    margin-right: 20px;
+    ;
+}
+
+.suggestion-element img {
+    width: 18px;
+    margin-right: 20px;
+}
+
+
+
+#lupita {
+    margin: 5px;
+    display: none;
+    width: 20px;
+}
+
+#searchButton {
+    margin-right: 20px;
+    width: 20px;
+}
+
+/* SECTION 2 */
+
+.section2 h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #572EE5;
+    font-size:16px;
+    text-align: center;
+    height: 25px;
+    margin-top: 31px;
+}
+
+
+
+.section2 .main-description {
+    font-family: 'Roboto', sans-serif;
+    color: #572EE5;
+    font-size:14px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* SECTION 3 */
+
+#resultsPanel{
+    display: none;
+}
+
+.section3-results .linea {
+    margin: auto;
+    width: 157px;
+    margin-bottom: 43px;
+    opacity: 50%;
+}
+
+.section3-results h2 {
+    margin-bottom: 38px;
+
+}
+
+#tituloSeccion {
+    font-family: 'Montserrat', sans-serif;
+    color: #572EE5;
+    font-size:25px;
+    text-align: center;
+}
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#no-results {
+    display: none;
+}
+
+#no-results-text {
+    padding-top: 20px;
+    color: #50E3C2;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px
+}
+
+.section3-results{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px 21px;
+    margin: 21px;
+  }
+
+.grid-item {
+    object-fit: cover;
+    width: 152px;
+    height: 120px
+}
+
+.section3-results .button {
+    background: #ffffff;
+    border: 1px solid #572ee5;
+    border-radius: 27px;
+    margin: 0 auto;
+    margin-top: 78px;
+    margin-bottom: 79px;
+    height: 50px;
+    width: 127px;
+    font-family: 'Montserrat', sans-serif;
+    color: #572EE5;
+
+}
+
+.viewmore {
+    width: 100%;
+    text-align: center;
+}
+
+.section6{
+    background-color: #F3F5F8;
+    height: 430px;
+}
+
+.section6 h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #572EE5;
+    font-size:25px;
+    text-align: center;
+    padding-top: 46px;
+    padding-bottom: 7px;
+}
+
+.section6 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.hovercard {
+    object-fit: cover;
+    width: 152px;
+    height: 120px
+}
+
+.hovercard-trending {
+    width: 243px;
+    height: 183px;
+    margin: 0px 10px;
+}
+
+.trending-carrusel {
+    margin-left: 22px;
+    margin-top: 32px;
+}
+
+.button-left, .button-right {
+    display: none;
+}
+
+.carrusel {
+    display: flex;
+    overflow: scroll;
+}
+
+.carrusel-image{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin: auto;
+}
+
+.button-left{
+    margin-right: 22px;
+}
+
+.button-right{
+    margin-left: 22px;
+}
+
+.zindex 
+{
+    display: none;
+}
+
+.section7{
+    border-bottom:  5px solid #572ee5;
+}
+
+.section7 h2 {
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 47px;
+    margin-bottom: 24px;
+}
+
+.section7 .iconos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media {
+    color: #CDD6E0 ;
+}
+
+.section7 p{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 23px;
+}
+
+#share {
+    margin: 0px 35%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0); Fallback color */
+    background-color: rgba(255, 255, 255,0.9); /* Black w/ opacity */
+  }
+  
+/* Modal Content/Box */
+.modal-content {
+/* background-color: #fefefe; */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 318px;
+}
+
+.modal-content .modal-close{
+    float: right;
+}
+
+.modal-content .modal-gifos {
+    margin-top: 73px;
+    object-fit: cover;
+    width: 318px;
+    height: 245px;
+}
+
+.modal-content .modal-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.modal-content .modal-flex-img {
+    display: flex;
+}
+
+#modal-user{
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
+#modal-titulo{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+#modal-descargar {
+    margin-left: 29px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  

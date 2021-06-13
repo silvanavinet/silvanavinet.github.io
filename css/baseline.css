@@ -1,0 +1,23 @@
+.button {
+  border-radius: 25px;
+  width: 127px;
+  height: 50px;
+  margin: auto;
+  border: 1px solid #572EE5;
+  color: #572EE5;
+  font-size: 13px;
+  font-family: Montserrat;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.button:hover {
+  border: 1px solid #572EE5;
+  background-color: #572EE5;
+  color: white;
+}
+
+.button p {
+  margin-top: 12%;
+}
